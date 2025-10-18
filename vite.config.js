@@ -4,9 +4,10 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [react()],
   server: {
-    allowedHosts: true
+    host: true
   },
   resolve: {
     alias: {
@@ -21,4 +22,4 @@ export default defineConfig({
       },
     },
   },
-}) 
+})
